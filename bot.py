@@ -6,7 +6,7 @@ from aiogram.types import Message
 import os
 
 TOKEN = os.getenv("BOT_TOKEN")
-bot = Bot(token="TOKEN")
+bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
 with open('slang.json', 'r', encoding='utf-8') as f:
