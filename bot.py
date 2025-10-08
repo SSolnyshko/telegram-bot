@@ -4,9 +4,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from aiogram.types import Message
 import os
-
-TOKEN = os.getenv("BOT_TOKEN")
-bot = Bot(token=TOKEN)
+bot = Bot(token=os.getenv("TOKEN"))
 dp = Dispatcher()
 
 with open('slang.json', 'r', encoding='utf-8') as f:
